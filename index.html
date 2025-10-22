@@ -25,13 +25,13 @@
             <div class="prompt-form">
                 <!--Prompt Input-->
                 <textarea class="prompt-input" placeholder="Describe your imagination?" required autofocus></textarea>
-                 <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
-                <i class="fa-solid fa-brain"></i>
-            </button>
+                 <button type="button" class="prompt-btn">
+                    <i class="fa-solid fa-brain"></i>
+                 </button>
             </div>
             <!--Prompt action-->
             <div class="select-wrapper">
-                <select id="model-select" class="custom-select" aria-label="Select model" title="Select model">
+                <select id="model-select" class="custom-select" aria-label="Select model" title="Select model" required>
                     <option value="" selected disabled>Aspect Ratio</option>
                     <option value="1/1">Square(1:1)</option>
                     <option value="16/9">Landscape(16:9)</option>
@@ -41,7 +41,7 @@
 
             </div>
             <div class="select-wrapper">
-                <select id="model-select" class="custom-select" aria-label="Select model" title="Select model">
+                <select id="model-select" class="custom-select" aria-label="Select model" title="Select model" required>
                     <option value="" selected disabled>Select Mode</option>
                     <option value="black-forest-labs/FLUX.1">FLUX.1-dev</option>
                     <option value="black-forest-labs/FLUX.1-schnell">FLUX.1-schnell</option>
@@ -52,7 +52,7 @@
 
             </div>
             <div class="select-wrapper">
-                <select id="model-select" class="custom-select" aria-label="Select model" title="Select model">
+                <select id="model-select" class="custom-select" aria-label="Select model" title="Select model" required>
                     <option value="" selected disabled>Image Count</option>
                     <option value="1">1 Image</option>
                     <option value="2">2 Image</option>
@@ -62,6 +62,9 @@
                 </select>
 
             </div>
+            <button type="submit" class="generate-btn">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Image
+            </button>
         </div>
     </div>
 </body>
