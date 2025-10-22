@@ -9,12 +9,25 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <!--Header-->
+        <header class="header">
             <div class="logo-wrapper">
                 <div class="logo">
                     <i class="fa-solid fa-wand-magic-sparkles"></i>
                 </div>
                 <h1> AI Image Generator</h1>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </header>
+        <div class="main-content">
+            <div class="prompt-form">
+                <!--Prompt Input-->
+                <textarea class="prompt-input" placeholder="Describe your imagination?" required autofocus></textarea>
+                 <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                <i class="fa-solid fa-brain"></i>
+            </button>
             </div>
         </div>
     </div>
