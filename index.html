@@ -25,14 +25,14 @@
             <div class="prompt-form">
                 <!--Prompt Input-->
                 <textarea class="prompt-input" placeholder="Describe your imagination?" required autofocus></textarea>
-                 <button type="button" value="prompt" class="prompt-btn">
-                    <i class="fa-solid fa-brain"></i>
+                 <button type="button" value="prompt" class="prompt-btn" title="Generate prompt" aria-label="Generate prompt">
+                    <i class="fa-solid fa-brain" aria-hidden="true"></i>
                  </button>
             </div>
             <!--Prompt action-->
             <div class="prompt-actions">
               <div class="select-wrapper">
-                <select id="model-select" class="custom-select" aria-label="Select model" title="Select model" required>
+                <select id="model-select" class="custom-select" id="model-Select " title="Select model" required>
                     <option value="" selected disabled>Aspect Ratio</option>
                     <option value="1/1">Square(1:1)</option>
                     <option value="16/9">Landscape(16:9)</option>
@@ -43,7 +43,7 @@
                 </div>
             
               <div class="select-wrapper">
-                   <select id="model-select" class="custom-select" aria-label="Select model" title="Select model" required>
+                   <select id="model-select" class="custom-select" id="count-select" title="Select model" required>
                      <option value="" selected disabled>Select Mode</option>
                      <option value="black-forest-labs/FLUX.1">FLUX.1-dev</option>
                      <option value="black-forest-labs/FLUX.1-schnell">FLUX.1-schnell</option>
@@ -52,7 +52,7 @@
                    </select>
               </div>
               <div class="select-wrapper">
-                <select id="model-select" class="custom-select" aria-label="Select model" title="Select model" required>
+                <select id="model-select" class="custom-select" id="ratio-select" title="Select model" required>
                     <option value="" selected disabled>Image Count</option>
                     <option value="1">1 Image</option>
                     <option value="2">2 Image</option>
