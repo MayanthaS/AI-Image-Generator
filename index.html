@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body >
     <div class="container">
         <!--Header-->
         <header class="header">
@@ -25,7 +25,7 @@
             <div class="prompt-form">
                 <!--Prompt Input-->
                 <textarea class="prompt-input" placeholder="Describe your imagination?" required autofocus></textarea>
-                 <button type="button" class="prompt-btn">
+                 <button type="button" value="prompt" class="prompt-btn">
                     <i class="fa-solid fa-brain"></i>
                  </button>
             </div>
@@ -67,7 +67,12 @@
          </div>
          <!--Result Gallery Grid-->
          <div class="gallery-grid">
-            <div class="img-card">
+            <div class="img-card loading">
+                <div class="status-container">
+                    <div class="spinner"> </div>
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                     <p class="status-text">Generating...</p>
+                </div>
                 <img src="./test.png" class="result-img" alt="Generated image" title="Generated image" />
                 <div class="img-overlay">
                     <button class="img-download-btn">
@@ -101,5 +106,6 @@
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
