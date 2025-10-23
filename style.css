@@ -127,9 +127,23 @@ body{
     height: 35px;
     width: 35px;
     background: var(--color-gradient);
+    transition: all 0.3s ease;
 }
 .prompt-form .prompt-btn:hover{
     opacity: 1;
     transform: translateY(-2px);
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+.main-content .prompt-actions{
+    display: flex;
+    gap:14px;
+    grid-template-columns: 1.2fr 1fr 1.1fr 1fr;
+}
+.prompt-actions :where(.custom-select, .generate-btn){
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: var(--color-input);
+    border: 1px solid var(--color-border);
 }
